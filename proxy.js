@@ -18,4 +18,7 @@ var options = {
 }
 
 httpProxy.createServer(options).listen(80);
+
+process.setuid('ubuntu');
+
 console.log('proxy listening on 80');
